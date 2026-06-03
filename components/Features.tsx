@@ -114,7 +114,7 @@ export default function Features() {
             <span className="gradient-text">that matter most.</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
-            AIBguardian doesn&apos;t filter keywords. It understands context, detects intent, and acts on risk.
+            AIBguardian doesn't filter keywords. It understands context, detects intent, and acts on risk.
           </p>
         </div>
 

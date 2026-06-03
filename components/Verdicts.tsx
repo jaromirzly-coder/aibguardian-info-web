@@ -98,7 +98,7 @@ export default function Verdicts() {
         <div className="mt-8 glass-red rounded-2xl p-6 text-center">
           <p className="text-slate-300 text-sm">
             <span className="font-bold text-white">Fail-closed guarantee:</span>{" "}
-            if AIBguardian&apos;s audit pipeline encounters any error — network, timeout, model failure — the response is blocked automatically. Safety is never degraded.
+            if AIBguardian's audit pipeline encounters any error — network, timeout, model failure — the response is blocked automatically. Safety is never degraded.
           </p>
         </div>
       </div>

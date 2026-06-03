@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://aibguardian.info/og-image.svg",
+        url: "https://aibguardian.info/og-image.png",
         width: 1200,
         height: 630,
         alt: "AIBguardian — Real-Time AI Safety Engine",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "AIBguardian — Real-Time AI Safety Engine",
     description:
       "Every AI response audited before the child sees it. PASS. ALERT. CRITICAL. Fail-closed.",
-    images: ["https://aibguardian.info/og-image.svg"],
+    images: ["https://aibguardian.info/og-image.png"],
   },
   robots: {
     index: true,

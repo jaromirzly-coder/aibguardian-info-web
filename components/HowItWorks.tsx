@@ -73,7 +73,7 @@ export default function HowItWorks() {
             <span className="gradient-text">step by step.</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
-            Every interaction passes through AIBguardian before a child sees a single word of the AI&apos;s response.
+            Every interaction passes through AIBguardian before a child sees a single word of the AI's response.
           </p>
         </div>
 
