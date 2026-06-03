@@ -73,6 +73,10 @@ export default function Footer() {
                 <li key={c}>{c}</li>
               ))}
             </ul>
+            <p className="text-xs text-slate-600 mt-5">
+              Enterprise / API Access:{" "}
+              <a href="mailto:info@aibguardian.info" className="hover:text-brand-red transition-colors">info@aibguardian.info</a>
+            </p>
           </div>
         </div>
 
@@ -82,6 +86,8 @@ export default function Footer() {
             <a href="mailto:info@aibguardian.info" className="hover:text-brand-red transition-colors">info@aibguardian.info</a>
             <a href="mailto:support@aibguardian.info" className="hover:text-brand-red transition-colors">support@aibguardian.info</a>
             <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">AIBSN Registry</a>
+            <a href="/privacy-policy" className="hover:text-brand-red transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-brand-red transition-colors">Terms</a>
           </div>
         </div>
       </div>

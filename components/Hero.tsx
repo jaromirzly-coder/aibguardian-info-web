@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-brand-crimson/[0.12] rounded-full blur-[80px] pointer-events-none" />
 
       {/* Scan line animation */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.015]">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.015]" aria-label="AIBguardian fail-closed AI safety middleware audit pipeline diagram showing PASS ALERT CRITICAL verdicts">
         <div className="w-full h-px bg-brand-red animate-scan" style={{ animationDuration: "6s" }} />
       </div>
 
@@ -31,16 +31,16 @@ export default function Hero() {
           <span className="text-xs text-slate-400 tracking-wide">In development since 2023</span>
         </div>
 
-        {/* Hero tagline — three punchy lines */}
+        {/* Hero tagline */}
         <h1 className="animate-fade-up animate-delay-100">
           <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold text-white leading-[0.95] tracking-[-0.03em] mb-2">
-            Two years.
+            Real-Time AI Safety
           </span>
           <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-[-0.03em] mb-2">
-            <span className="gradient-text">One technology.</span>
+            <span className="gradient-text">Middleware &amp;</span>
           </span>
           <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold text-white/90 leading-[0.95] tracking-[-0.03em]">
-            Safe AI.
+            LLM Audit Engine
           </span>
         </h1>
 

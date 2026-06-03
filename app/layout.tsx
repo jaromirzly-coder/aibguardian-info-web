@@ -59,6 +59,15 @@ export const metadata: Metadata = {
 
 const GA_ID = "G-JHHL6VDXW1";
 
+const jsonLdSoftware = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AIBguardian",
+  "applicationCategory": "SecurityApplication",
+  "description": "Real-time AI safety middleware with fail-closed dual-model audit pipeline for child protection",
+  "operatingSystem": "Web"
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -110,6 +119,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Script
+          id="json-ld-software"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
         />
       </head>
       <body>{children}</body>
