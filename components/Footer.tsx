@@ -79,7 +79,8 @@ export default function Footer() {
         <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-600">© 2026 AIBguardian · AIBlab · SAY TO PAY s.r.o. All rights reserved.</p>
           <div className="flex items-center gap-5 text-xs text-slate-600">
-            <a href="mailto:info@aiblab.cz" className="hover:text-brand-red transition-colors">info@aiblab.cz</a>
+            <a href="mailto:info@aibguardian.info" className="hover:text-brand-red transition-colors">info@aibguardian.info</a>
+            <a href="mailto:support@aibguardian.info" className="hover:text-brand-red transition-colors">support@aibguardian.info</a>
             <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">AIBSN Registry</a>
           </div>
         </div>
