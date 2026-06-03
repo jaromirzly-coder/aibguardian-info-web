@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: "https://aibguardian.info/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AIBguardian — Real-Time AI Safety Engine",
+        alt: "AIBguardian fail-closed AI safety middleware with dual-model PASS ALERT CRITICAL audit pipeline for child protection",
       },
     ],
   },
