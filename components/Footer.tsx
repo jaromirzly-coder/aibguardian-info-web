@@ -74,7 +74,7 @@ export default function Footer() {
               ))}
             </ul>
             <p className="text-xs text-slate-600 mt-5">
-              Enterprise / API Access:{" "}
+              Contact for Enterprise / API Access:{" "}
               <a href="mailto:info@aibguardian.info" className="hover:text-brand-red transition-colors">info@aibguardian.info</a>
             </p>
           </div>
