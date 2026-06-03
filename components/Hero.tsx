@@ -34,13 +34,10 @@ export default function Hero() {
         {/* Hero tagline */}
         <h1 className="animate-fade-up animate-delay-100">
           <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold text-white leading-[0.95] tracking-[-0.03em] mb-2">
-            Real-Time AI Safety
+            Real-Time AI Safety Middleware
           </span>
-          <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-[-0.03em] mb-2">
-            <span className="gradient-text">Middleware &amp;</span>
-          </span>
-          <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold text-white/90 leading-[0.95] tracking-[-0.03em]">
-            LLM Audit Engine
+          <span className="block text-6xl sm:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-[-0.03em]">
+            <span className="gradient-text">&amp; LLM Audit Engine</span>
           </span>
         </h1>
 
