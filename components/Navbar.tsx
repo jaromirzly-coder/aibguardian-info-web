@@ -2,10 +2,10 @@
 import { useState, useEffect } from "react";
 
 const links = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Verdicts",     href: "#verdicts" },
+  { label: "Technology",   href: "#what-is" },
+  { label: "Verified",     href: "#tested" },
   { label: "Architecture", href: "#architecture" },
-  { label: "Features",     href: "#features" },
+  { label: "Ecosystem",    href: "#ecosystem" },
 ];
 
 export default function Navbar() {

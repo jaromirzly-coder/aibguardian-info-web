@@ -6,11 +6,12 @@ const ecosystem = [
 ];
 
 const productLinks = [
-  { label: "How It Works",          href: "#how-it-works" },
-  { label: "PASS / ALERT / CRITICAL", href: "#verdicts" },
-  { label: "Architecture",          href: "#architecture" },
-  { label: "AIBgin (Schools)",      href: "https://aibgin.info" },
-  { label: "AIBfamily (Families)",  href: "https://aibfamily.cloud" },
+  { label: "What is AIBguardian", href: "#what-is" },
+  { label: "Deployment Record",   href: "#tested" },
+  { label: "Architecture",        href: "#architecture" },
+  { label: "AIBSN Passport",      href: "#aibsn-passport" },
+  { label: "AIBgin (Schools)",    href: "https://aibgin.info" },
+  { label: "AIBfamily",           href: "https://aibfamily.cloud" },
 ];
 
 export default function Footer() {

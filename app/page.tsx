@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
-import Verdicts from "@/components/Verdicts";
+import WhatIs from "@/components/WhatIs";
+import Tested from "@/components/Tested";
 import Architecture from "@/components/Architecture";
-import Features from "@/components/Features";
-import UseCases from "@/components/UseCases";
-import Powered from "@/components/Powered";
+import AibsnPassport from "@/components/AibsnPassport";
+import Ecosystem from "@/components/Ecosystem";
+import ParentsCTA from "@/components/ParentsCTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -13,12 +13,12 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <HowItWorks />
-      <Verdicts />
+      <WhatIs />
+      <Tested />
       <Architecture />
-      <Features />
-      <UseCases />
-      <Powered />
+      <AibsnPassport />
+      <Ecosystem />
+      <ParentsCTA />
       <Footer />
     </main>
   );
