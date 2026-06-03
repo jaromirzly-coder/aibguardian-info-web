@@ -76,8 +76,19 @@ export default function Hero() {
           ))}
         </div>
 
+        {/* Hero Image */}
+        <div className="mt-20 animate-fade-up animate-delay-500">
+          <img
+            src="/hero-middleware.png"
+            alt="AIBguardian real-time AI safety middleware — PASS ALERT CRITICAL audit pipeline for child protection"
+            width="1200"
+            height="900"
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-glow-red"
+          />
+        </div>
+
         {/* Scroll cue */}
-        <div className="mt-20 flex justify-center animate-fade-up animate-delay-500">
+        <div className="mt-20 flex justify-center animate-fade-up animate-delay-600">
           <div className="flex flex-col items-center gap-2 opacity-30">
             <span className="text-[10px] text-slate-500 uppercase tracking-[0.2em]">Scroll</span>
             <svg width="16" height="24" viewBox="0 0 16 24" fill="none" className="animate-bounce">
