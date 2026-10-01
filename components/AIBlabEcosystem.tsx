@@ -1,5 +1,5 @@
 const live = [
-  { name: "AIBEVA", desc: "Your personal AI assistant for Windows. Runs on your PC. Free to try.", href: "https://aibeva.com", domain: "aibeva.com" },
+  { name: "AIBEVA", desc: "Your personal AI assistant for Windows, powered by AIB.core. Runs on your PC. Free to try.", href: "https://aibeva.com", domain: "aibeva.com" },
   { name: "AIBSN", desc: "The identity registry behind AIBEVA.", href: "https://aibsn.org", domain: "aibsn.org" },
   { name: "AIBguardian", desc: "AI safety and governance.", href: "https://aibguardian.info", domain: "aibguardian.info" },
 ];
@@ -21,7 +21,7 @@ export default function AIBlabEcosystem() {
           Built by SAY TO PAY s.r.o., an EU company based in Ostrava, Czech Republic. On the market since 2019, research roots since 2002.
         </p>
 
-        <div className="grid sm:grid-cols-3 gap-4 mb-8">
+        <div className="grid sm:grid-cols-3 gap-4 mb-10">
           {live.map((p) => (
             <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer"
               className="group block rounded-2xl border border-white/[0.08] bg-white/[0.02] p-5 hover:border-white/20 hover:bg-white/[0.04] transition-colors">
@@ -31,10 +31,6 @@ export default function AIBlabEcosystem() {
             </a>
           ))}
         </div>
-
-        <p className="text-sm text-slate-400 mb-10">
-          <span className="text-white font-semibold">AIB.core</span> — the engine behind AIBEVA.
-        </p>
 
         <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em] mb-3">In development</p>
         <ul className="flex flex-col sm:flex-row gap-3 sm:gap-8 mb-10">
