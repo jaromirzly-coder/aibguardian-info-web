@@ -1,5 +1,5 @@
 const live = [
-  { name: "AIBEVA", desc: "Your personal AI assistant for Windows, powered by AIB.core. Runs on your PC. Free to try.", href: "https://aibeva.com", domain: "aibeva.com" },
+  { name: "AIBEVA", desc: "The personal AI for Windows that remembers you, powered by AIB.core. Runs on your PC. Free to try.", href: "https://aibeva.com", domain: "aibeva.com" },
   { name: "AIBSN", desc: "The identity registry behind AIBEVA.", href: "https://aibsn.org", domain: "aibsn.org" },
   { name: "AIBguardian", desc: "AI safety and governance.", href: "https://aibguardian.info", domain: "aibguardian.info" },
 ];
