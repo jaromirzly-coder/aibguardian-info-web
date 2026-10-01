@@ -6,6 +6,7 @@ import Architecture from "@/components/Architecture";
 import AibsnPassport from "@/components/AibsnPassport";
 import Ecosystem from "@/components/Ecosystem";
 import ParentsCTA from "@/components/ParentsCTA";
+import AIBlabEcosystem from "@/components/AIBlabEcosystem";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <AibsnPassport />
       <Ecosystem />
       <ParentsCTA />
+      <AIBlabEcosystem />
       <Footer />
     </main>
   );
