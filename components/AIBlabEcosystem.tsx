@@ -5,8 +5,8 @@ const live = [
 ];
 
 const upcoming = [
-  { name: "AIBgin", desc: "AI for schools and classrooms.", href: "https://aibgin.info", domain: "aibgin.info" },
-  { name: "AIBfamily", desc: "AI oversight for parents.", href: "https://aibfamily.cloud", domain: "aibfamily.cloud" },
+  { name: "AIBgin", desc: "AI for schools and classrooms, being built on AIB.core.", href: "https://aibgin.info", domain: "aibgin.info" },
+  { name: "AIBfamily", desc: "AI oversight for parents, being built on AIB.core.", href: "https://aibfamily.cloud", domain: "aibfamily.cloud" },
 ];
 
 export default function AIBlabEcosystem() {
@@ -31,6 +31,10 @@ export default function AIBlabEcosystem() {
             </a>
           ))}
         </div>
+
+        <p className="text-sm text-slate-400 mb-10">
+          <span className="text-white font-semibold">AIB.core</span> — the engine behind AIBEVA.
+        </p>
 
         <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em] mb-3">In development</p>
         <ul className="flex flex-col sm:flex-row gap-3 sm:gap-8 mb-10">
