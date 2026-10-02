@@ -80,11 +80,7 @@ export default function AibsnPassport() {
               <span className="gradient-text">for every AI agent.</span>
             </h2>
 
-            <p className="text-slate-400 leading-relaxed mb-5">
-              The AIBSN Passport is a cryptographically verifiable digital identity issued to AI agents
-              through the AIBSN global registry. Before any AI agent may operate within the AIBguardian
-              protection perimeter, its passport must be authenticated.
-            </p>
+            <p className="text-slate-400 leading-relaxed mb-5">{"AIBlab has run AIBSN, the global registry of AI identities, since 2025. The AIBSN trademark is registered in the Czech Republic and the United Kingdom, and the registry is cited in academic research (Columbia University, 2026). An AIBEVA identity is an AIBSN identity — the same one any AI agent in the world can have."}</p>
 
             <p className="text-slate-500 leading-relaxed mb-8">
               Each passport carries the agent's compliance documentation, deployment history, and an

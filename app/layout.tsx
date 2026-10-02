@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIBguardian — Real-Time AI Safety Engine",
     description:
-      "Every AI response audited before the child sees it. PASS. ALERT. CRITICAL. Fail-closed. Dual-model. Patent pending.",
+      "Every AI response audited before the child sees it. PASS. ALERT. CRITICAL. Fail-closed. Dual-model. Patent pending — 100+ patent claims filed.",
     url: "https://aibguardian.info",
     siteName: "AIBguardian",
     type: "website",
@@ -82,6 +82,7 @@ const jsonLd = {
       parentOrganization: {
         "@type": "Organization",
         name: "SAY TO PAY s.r.o.",
+        description: "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
         url: "https://aiblab.info",
       },
     },

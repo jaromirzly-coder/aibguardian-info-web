@@ -1,5 +1,5 @@
 # AIBguardian — Real-Time AI Safety Middleware
-> Fail-closed dual-model audit engine (Claude Sonnet + Haiku). PASS/ALERT/CRITICAL verdicts on every AI response. Patent pending.
+> Fail-closed dual-model audit engine (Claude Sonnet + Haiku). PASS/ALERT/CRITICAL verdicts on every AI response. Patent pending — 100+ patent claims filed.
 
 ## Key facts
 - Architecture: 3-layer (Identity, Guardian Middleware, Global Trust Network)

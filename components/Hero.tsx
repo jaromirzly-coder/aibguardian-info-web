@@ -21,12 +21,12 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center py-32">
 
-        {/* Patents Pending badge */}
+        {/* Patent pending — 100+ patent claims filed badge */}
         <div className="inline-flex items-center gap-2.5 glass-red rounded-full px-5 py-2 mb-12 animate-fade-up">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path d="M6 1L7.5 4.5H11L8.3 6.7 9.3 10.2 6 8.1 2.7 10.2 3.7 6.7 1 4.5H4.5L6 1Z" fill="#ef4444" opacity="0.9"/>
           </svg>
-          <span className="text-xs font-bold text-brand-light tracking-[0.15em] uppercase">Patents Pending</span>
+          <span className="text-xs font-bold text-brand-light tracking-[0.15em] uppercase">Patent pending — 100+ patent claims filed</span>
           <span className="text-brand-red/40">·</span>
           <span className="text-xs text-slate-400 tracking-wide">In development since 2023</span>
         </div>

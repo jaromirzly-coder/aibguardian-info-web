@@ -14,7 +14,7 @@ const layers = [
     borderColor: "border-blue-500/25",
     tagColor: "text-blue-400",
     components: [
-      { name: "AIBSN Passport", desc: "Cryptographically verified identity for every AI agent." },
+      { name: "AIBSN Passport", desc: "The global registry of AI identities, run by AIBlab since 2025. Every AIBEVA has an AIBSN identity." },
       { name: "Blockchain Verification", desc: "Immutable registration on the AIBSN global registry." },
       { name: "Anti-Anonymity", desc: "No unregistered AI agent may interact with a child." },
     ],
@@ -71,7 +71,7 @@ export default function Architecture() {
             <span className="gradient-text">protection stack.</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
-            AIBguardian is a proprietary three-tier safety architecture developed since 2023. Patent pending.
+            AIBguardian is a proprietary three-tier safety architecture developed since 2023. Patent pending — 100+ patent claims filed.
           </p>
         </div>
 

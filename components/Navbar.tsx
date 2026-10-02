@@ -5,7 +5,7 @@ const links = [
   { label: "Technology",   href: "#what-is" },
   { label: "Verified",     href: "#tested" },
   { label: "Architecture", href: "#architecture" },
-  { label: "Ecosystem",    href: "#ecosystem" },
+  { label: "Ecosystem",    href: "#aiblab-ecosystem" },
 ];
 
 export default function Navbar() {

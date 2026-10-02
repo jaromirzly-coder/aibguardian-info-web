@@ -33,7 +33,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-4">
-              Real-time AI safety middleware. Fail-closed. Three-layer architecture. Patent pending.
+              Real-time AI safety middleware. Fail-closed. Three-layer architecture. Patent pending — 100+ patent claims filed.
             </p>
             <p className="text-slate-600 text-xs">AIBlab · SAY TO PAY s.r.o.</p>
             <p className="text-slate-600 text-xs">Czech Republic · EU</p>
@@ -69,7 +69,7 @@ export default function Footer() {
           <div>
             <h5 className="text-xs font-bold text-slate-400 mb-5 uppercase tracking-[0.15em]">Compliance</h5>
             <ul className="space-y-2 text-sm text-slate-500">
-              {["EU AI Act Article 28b", "GDPR / UK GDPR", "NIST AI RMF", "ISO 42001", "KCSiE (UK)", "Patents Pending"].map((c) => (
+              {["EU AI Act Article 28b", "GDPR / UK GDPR", "NIST AI RMF", "ISO 42001", "KCSiE (UK)", "Patent pending — 100+ patent claims filed"].map((c) => (
                 <li key={c}>{c}</li>
               ))}
             </ul>
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-600">© 2026 AIBguardian · AIBlab · SAY TO PAY s.r.o. All rights reserved.</p>
+          <p className="text-xs text-slate-600">A product of SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic · Patent pending — 100+ patent claims filed</p>
           <div className="flex items-center gap-5 text-xs text-slate-600">
             <a href="mailto:info@aibguardian.info" className="hover:text-brand-red transition-colors">info@aibguardian.info</a>
             <a href="mailto:support@aibguardian.info" className="hover:text-brand-red transition-colors">support@aibguardian.info</a>

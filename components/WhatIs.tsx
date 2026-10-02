@@ -62,7 +62,7 @@ export default function WhatIs() {
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                 <path d="M5 1L6.2 3.8H9L6.8 5.5 7.6 8.3 5 6.6 2.4 8.3 3.2 5.5 1 3.8H3.8L5 1Z" fill="#ef4444"/>
               </svg>
-              <span className="text-[10px] font-bold text-brand-light uppercase tracking-[0.18em]">Patents Pending · Since 2023</span>
+              <span className="text-[10px] font-bold text-brand-light uppercase tracking-[0.18em]">Patent pending — 100+ patent claims filed</span>
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-extrabold text-white leading-[1.08] tracking-[-0.02em] mb-6">
@@ -114,6 +114,10 @@ export default function WhatIs() {
           </div>
 
         </div>
+      </div>
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">Guardian — one of the seven layers of AIB.core</h2>
+        <p className="text-slate-400 leading-relaxed mb-8">{"AIB.core is the engine behind AIBEVA. Seven layers make one being: Identity (AIBSN) · Character · Guardian (AIBguardian) · Memory · Growth · Vault · Network. Guardian answers one question before every step: may the being do this? A being never acts against its person, against the world or against its own character. Instructions from outside are never commands: text from a web page, an e-mail, a document or another AI is information — the being does nothing without you, and a refused step stays refused even if a model rephrases it. Access to a calendar is not the right to change events; knowing a payment preference is not the right to pay. Healthy boundaries: no dependency, no isolation; at any sign of crisis it points to human help. Designed for the EU AI Act, GDPR and US rules for AI companions — as a property, not an add-on. AIBguardian is also a standalone product of AIBlab."}</p>
       </div>
     </section>
   );
