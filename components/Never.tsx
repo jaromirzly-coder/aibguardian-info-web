@@ -20,10 +20,10 @@ export default function Never() {
         </h2>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
           <img
-            src={IMAGES.guardian.src}
-            alt="The Guardian layer: outside instructions break against the shield"
-            width={IMAGES.guardian.width}
-            height={IMAGES.guardian.height}
+            src={IMAGES.grdNever.src}
+            alt="A golden AIB core with seven boundaries of light that are never crossed"
+            width={IMAGES.grdNever.width}
+            height={IMAGES.grdNever.height}
             loading="lazy"
             className="w-full h-auto rounded-2xl border border-white/[0.08] min-w-0"
           />

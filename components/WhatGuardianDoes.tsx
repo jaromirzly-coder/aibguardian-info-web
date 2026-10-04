@@ -1,3 +1,5 @@
+import { IMAGES } from "./images";
+
 const decisions = [
   { word: "ALONE",         text: "Safe, expected steps it may take on its own." },
   { word: "ONLY WITH YOU", text: "Steps that need your explicit yes — every time." },
@@ -27,6 +29,14 @@ export default function WhatGuardianDoes() {
           Guardian is not a word filter bolted on at the end. It sits inside the AIB and decides before anything happens.
         </p>
 
+        <img
+          src={IMAGES.grdDoes.src}
+          alt="Three paths from an AIB core: open, through a gate that waits for you, and ending at a wall of light"
+          width={IMAGES.grdDoes.width}
+          height={IMAGES.grdDoes.height}
+          loading="lazy"
+          className="w-full h-auto max-h-[440px] object-cover rounded-2xl border border-white/[0.08] mb-10 sm:mb-12"
+        />
         <div className="grid sm:grid-cols-3 gap-4 mb-14">
           {decisions.map((d, i) => (
             <div key={d.word}

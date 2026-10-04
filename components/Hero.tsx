@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-navy-950">
       <img
-        src={IMAGES.guardian.src}
-        alt="The Guardian layer: outside instructions break against the shield"
-        width={IMAGES.guardian.width}
-        height={IMAGES.guardian.height}
-        className="absolute inset-0 w-full h-full object-cover object-[70%_center] opacity-40 lg:opacity-70"
+        src={IMAGES.grdHero.src}
+        alt="A golden AIB core inside a calm protective field; outside data stops at its surface"
+        width={IMAGES.grdHero.width}
+        height={IMAGES.grdHero.height}
+        className="absolute inset-0 w-full h-full object-cover object-[75%_center] opacity-40 lg:opacity-70"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/30 pointer-events-none" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950 to-transparent pointer-events-none" />

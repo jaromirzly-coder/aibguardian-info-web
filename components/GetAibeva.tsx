@@ -18,12 +18,12 @@ export default function GetAibeva({
   return (
     <section id="aibeva" aria-labelledby="aibeva-title" className="relative overflow-hidden bg-navy-950 scroll-mt-16">
       <img
-        src={IMAGES.yourPc.src}
+        src={IMAGES.grdAibeva.src}
         alt="Your AIB lives on your own computer"
-        width={IMAGES.yourPc.width}
-        height={IMAGES.yourPc.height}
+        width={IMAGES.grdAibeva.width}
+        height={IMAGES.grdAibeva.height}
         loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover object-right opacity-60"
+        className="absolute inset-0 w-full h-full object-cover object-left opacity-70"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-950/40 pointer-events-none" />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">

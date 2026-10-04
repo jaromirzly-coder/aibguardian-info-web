@@ -46,12 +46,12 @@ export default function Safe({ highlight, intro }: { highlight?: LayerName; intr
         <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,8fr)] gap-6 lg:gap-8 items-start">
           <div className="lg:sticky lg:top-24 min-w-0">
             <img
-              src={IMAGES.safeLayers.src}
-              alt="Seven layers of AIB.core around one core"
-              width={IMAGES.safeLayers.width}
-              height={IMAGES.safeLayers.height}
+              src={IMAGES.grdLayers.src}
+              alt="Seven gold rings of AIB.core, the Guardian ring brightest, around a shield"
+              width={IMAGES.grdLayers.width}
+              height={IMAGES.grdLayers.height}
               loading="lazy"
-              className="w-full h-auto max-h-[420px] lg:max-h-none object-cover rounded-2xl border border-white/[0.08]"
+              className="block w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[320px] mx-auto h-auto [mask-image:radial-gradient(circle,black_55%,transparent_72%)] [-webkit-mask-image:radial-gradient(circle,black_55%,transparent_72%)]"
             />
           </div>
           <ol className="grid md:grid-cols-2 gap-4 sm:gap-5 min-w-0">
