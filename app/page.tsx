@@ -7,6 +7,7 @@ import Safe from "@/components/Safe";
 import Never from "@/components/Never";
 import GetAibeva from "@/components/GetAibeva";
 import Product from "@/components/Product";
+import HopeaBand from "@/components/HopeaBand";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         intro="Every AIBEVA has AIBguardian inside. Download it, talk to it, try to talk it out of its limits — and watch Guardian hold."
       />
       <Product />
+      <HopeaBand />
       <Footer />
     </main>
   );
