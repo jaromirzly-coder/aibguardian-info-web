@@ -9,7 +9,8 @@ import "./globals.css";
 const sans = Inter({ subsets: ["latin", "latin-ext"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-sans", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE.url),
+  // Explicit production domain: og:image and twitter:image must never point to a vercel.app preview URL.
+  metadataBase: new URL("https://www.aibguardian.info"),
   title: { default: SITE.title, template: `%s | ${SITE.name}` },
   description: SITE.description,
   keywords: SITE.keywords,
