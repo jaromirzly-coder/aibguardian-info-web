@@ -2,86 +2,137 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+/* Fonts are self-hosted through next/font (app/layout.tsx) — nothing is loaded from Google. */
 
 :root {
-  --guard-950: #080000;
-  --guard-900: #120000;
-  --brand-red: #ef4444;
-  --brand-crimson: #dc2626;
+  --navy: #0a1022;
+  --navy-950: #040916;
+  --gold-1: #f3d27a;
+  --gold-2: #d4a94f;
+  --gold-3: #b8892f;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
-  background: var(--guard-950);
+  background: var(--navy-950);
   color: #f1f5f9;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-.glass {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy-950); }
+::-webkit-scrollbar-thumb { background: rgba(212,169,79,0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(212,169,79,0.7); }
+
+.gold-text { color: var(--gold-1); }
+
+/* Big bold uppercase sans headlines (as on aibeva.com) */
+.headline {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 0.98;
+  overflow-wrap: break-word;
 }
 
-.glass-light {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.10);
+.kicker {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-2);
+  margin-bottom: 1rem;
 }
 
-.glass-red {
-  background: rgba(239, 68, 68, 0.06);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(239, 68, 68, 0.15);
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-2) 55%, var(--gold-3) 100%);
+  color: var(--navy);
 }
+.btn-gold:hover { filter: brightness(1.08); }
 
-.gradient-text {
-  background: linear-gradient(135deg, #ef4444 0%, #fca5a5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Legal pages (imprint, privacy policy, terms) */
+.legal h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin: 2.5rem 0 0.75rem;
 }
+.legal p + p { margin-top: 0.75rem; }
+.legal ul { list-style: none; padding: 0; margin-top: 0.75rem; }
+.legal li + li { margin-top: 0.75rem; }
+.legal a { color: #fff; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.legal a:hover { color: var(--gold-1); }
 
-.noise::before {
+/* Announcement band — the only solid-gold block on the page */
+.announce-band {
+  background: linear-gradient(120deg, var(--gold-1) 0%, var(--gold-2) 55%, var(--gold-3) 100%);
+  color: var(--navy);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+.announce-band::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%);
+  transform: translateX(-120%) skewX(-18deg);
+  animation: announce-shine 6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes announce-shine {
+  0%   { transform: translateX(-120%) skewX(-18deg); }
+  40%  { transform: translateX(340%) skewX(-18deg); }
+  100% { transform: translateX(340%) skewX(-18deg); }
+}
+.announce-dot {
+  position: relative;
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--navy);
+}
+.announce-dot::after {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 0;
+  border-radius: 9999px;
+  background: var(--navy);
+  animation: announce-pulse 1.8s ease-out infinite;
 }
-
-.animate-delay-100 { animation-delay: 100ms; }
-.animate-delay-200 { animation-delay: 200ms; }
-.animate-delay-300 { animation-delay: 300ms; }
-.animate-delay-400 { animation-delay: 400ms; }
-.animate-delay-500 { animation-delay: 500ms; }
-
-.section-line {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(239,68,68,0.3) 40%, rgba(220,38,38,0.3) 60%, transparent);
+@keyframes announce-pulse {
+  0%   { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(2.8); opacity: 0; }
 }
-
-.graphic-placeholder {
-  background: linear-gradient(135deg, rgba(239,68,68,0.05) 0%, rgba(220,38,38,0.03) 100%);
-  border: 1px dashed rgba(255,255,255,0.1);
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.2);
-  font-size: 11px;
-  font-weight: 500;
+.announce-pill {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0.05em 0.55em;
+  border-radius: 0.4em;
+  background: var(--navy);
+  color: var(--gold-1);
 }
-
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--guard-950); }
-::-webkit-scrollbar-thumb { background: rgba(239,68,68,0.4); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(239,68,68,0.7); }
+.announce-box {
+  display: inline-block;
+  padding: 0.04em 0.22em 0.08em;
+  border-radius: 0.12em;
+  background: var(--navy);
+  color: var(--gold-1);
+}
+.announce-btn {
+  background: var(--navy);
+  color: var(--gold-1);
+  box-shadow: 0 10px 30px rgba(10, 16, 34, 0.35);
+}
+.announce-btn:hover { background: #14224a; color: #fff; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .announce-band::after { animation: none; display: none; }
+  .announce-dot::after { animation: none; display: none; }
+}

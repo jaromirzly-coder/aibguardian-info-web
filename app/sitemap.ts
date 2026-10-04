@@ -1,48 +1,18 @@
 import { MetadataRoute } from "next";
+import { SITE } from "@/lib/site";
+
+const PAGES: { path: string; priority: number; changeFrequency: "monthly" | "yearly" }[] = [
+  { path: "",                priority: 1,   changeFrequency: "monthly" },
+  { path: "/imprint",        priority: 0.3, changeFrequency: "yearly" },
+  { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/terms",          priority: 0.3, changeFrequency: "yearly" },
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://aibguardian.info",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: "https://aibguardian.info/#what-is",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: "https://aibguardian.info/#tested",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: "https://aibguardian.info/#architecture",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.8,
-    },
-    {
-      url: "https://aibguardian.info/#aibsn-passport",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://aibguardian.info/#ecosystem",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://aibguardian.info/#parents",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-  ];
+  return PAGES.map((p) => ({
+    url: `${SITE.url}${p.path}`,
+    lastModified: new Date("2026-10-04"),
+    changeFrequency: p.changeFrequency,
+    priority: p.priority,
+  }));
 }

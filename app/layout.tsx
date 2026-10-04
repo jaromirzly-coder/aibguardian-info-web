@@ -1,54 +1,36 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import Consent from "@/components/Consent";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
+// next/font self-hosts the font files: no request goes to Google.
+const sans = Inter({ subsets: ["latin", "latin-ext"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-sans", display: "swap" });
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aibguardian.info"),
-  title: {
-    default: "AIBguardian — Real-Time AI Safety Engine | Fail-Closed",
-    template: "%s | AIBguardian",
-  },
-  description:
-    "AIBguardian is the fail-closed AI safety middleware powering AIBgin and AIBfamily. Dual-model audit pipeline, PASS/ALERT/CRITICAL verdicts, real-time crisis detection. Every AI response audited before a child sees it.",
-  keywords: [
-    "AI safety middleware", "child AI protection engine", "real-time AI audit",
-    "AIBguardian", "fail-closed AI safety", "school AI safety",
-    "parental AI monitoring engine", "AI content filtering children",
-    "safeguarding AI technology", "crisis detection AI",
-    "PASS ALERT CRITICAL AI", "AI audit pipeline", "dual model AI safety",
-    "EU AI Act compliance engine", "child online safety technology",
-  ],
-  authors: [{ name: "AIBguardian", url: "https://aibguardian.info" }],
+  metadataBase: new URL(SITE.url),
+  title: { default: SITE.title, template: `%s | ${SITE.name}` },
+  description: SITE.description,
+  keywords: SITE.keywords,
+  authors: [{ name: "AIBlab", url: "https://aiblab.info" }],
   creator: "AIBlab — SAY TO PAY s.r.o.",
-  alternates: { canonical: "https://aibguardian.info" },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
-  },
+  alternates: { canonical: "/" },
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/favicon.svg" },
   openGraph: {
-    title: "AIBguardian — Real-Time AI Safety Engine",
-    description:
-      "Every AI response audited before the child sees it. PASS. ALERT. CRITICAL. Fail-closed. Dual-model. Patent pending — 100+ patent claims filed.",
-    url: "https://aibguardian.info",
-    siteName: "AIBguardian",
+    title: SITE.title,
+    description: SITE.description,
+    url: SITE.url,
+    siteName: SITE.name,
     type: "website",
     locale: "en_US",
-    images: [
-      {
-        url: "https://aibguardian.info/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "AIBguardian fail-closed AI safety middleware with dual-model PASS ALERT CRITICAL audit pipeline for child protection",
-      },
-    ],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: SITE.ogAlt }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIBguardian — Real-Time AI Safety Engine",
-    description:
-      "Every AI response audited before the child sees it. PASS. ALERT. CRITICAL. Fail-closed.",
-    images: ["https://aibguardian.info/og-image.png"],
+    title: SITE.title,
+    description: SITE.description,
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -57,78 +39,57 @@ export const metadata: Metadata = {
   },
 };
 
-const GA_ID = "G-JHHL6VDXW1";
-
-const jsonLdSoftware = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "AIBguardian",
-  "applicationCategory": "SecurityApplication",
-  "description": "Real-time AI safety middleware with fail-closed dual-model audit pipeline for child protection",
-  "operatingSystem": "Web"
-};
+// Google Consent Mode v2: everything denied until the visitor accepts in the cookie banner.
+// gtag.js itself is loaded only after "Accept" (components/Consent.tsx).
+const CONSENT_DEFAULT = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied'
+});
+`;
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://aibguardian.info/#organization",
-      name: "AIBguardian",
-      url: "https://aibguardian.info",
-      logo: "https://aibguardian.info/logo.svg",
-      description:
-        "Fail-closed AI safety middleware for child-facing AI applications.",
-      parentOrganization: {
-        "@type": "Organization",
-        name: "SAY TO PAY s.r.o.",
-        description: "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
-        url: "https://aiblab.info",
-      },
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://aibguardian.info/#software",
-      name: "AIBguardian",
-      applicationCategory: "SecurityApplication",
-      operatingSystem: "API",
-      url: "https://aibguardian.info",
-      description:
-        "Real-time AI safety middleware with dual-model audit, fail-closed verdicts, and crisis detection for child-facing AI.",
-    },
+  "@type": "Organization",
+  "@id": `${SITE.url}/#organization`,
+  name: "SAY TO PAY s.r.o.",
+  alternateName: "AIBlab",
+  legalName: "SAY TO PAY s.r.o.",
+  url: "https://aiblab.info",
+  logo: `${SITE.url}/logo.svg`,
+  email: "info@aiblab.info",
+  foundingDate: "2019-11-14",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Zámostní 1155/27, Slezská Ostrava",
+    addressLocality: "Ostrava",
+    postalCode: "710 00",
+    addressCountry: "CZ",
+  },
+  sameAs: [
+    "https://aibeva.com", "https://aiblab.info", "https://aibsn.org", "https://www.aibguardian.info",
+    "https://www.aibgin.info", "https://www.aibfamily.cloud", "https://iamyouraib.online",
   ],
+  brand: { "@type": "Brand", name: SITE.name, url: SITE.url },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={sans.variable}>
       <head>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}', { page_path: window.location.pathname });
-          `}
-        </Script>
-        <Script
-          id="json-ld"
-          type="application/ld+json"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Script
-          id="json-ld-software"
-          type="application/ld+json"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
-        />
+        <script id="consent-default" dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body>{children}</body>
+      <body className="font-sans">
+        {children}
+        <Consent />
+        <Analytics />
+      </body>
     </html>
   );
 }

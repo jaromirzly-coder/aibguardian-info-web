@@ -1,7 +1,13 @@
-# AIBguardian — Real-Time AI Safety Middleware
-> Fail-closed dual-model audit engine (Claude Sonnet + Haiku). PASS/ALERT/CRITICAL verdicts on every AI response. Patent pending — 100+ patent claims filed.
+# AIBguardian — the Guardian layer of every AIB
+> Safety isn't a filter. It's the core. AIBguardian is the Guardian layer inside every AIBEVA: before any step it decides what an AIB may do alone, only with you, or never. Also available on its own for companies and device makers.
 
 ## Key facts
-- Architecture: 3-layer (Identity, Guardian Middleware, Global Trust Network)
-- Compliance: EU AI Act Article 28b, GDPR, NIST AI RMF, ISO 42001
-- Contact: info@aibguardian.info
+- Outside instructions are information, never orders. A refused step stays refused.
+- Healthy boundaries: no dependency, no isolation; in a crisis it points to human help.
+- Designed for the EU AI Act and GDPR.
+- One of the seven layers of AIB.core: Identity (AIBSN), Character, Guardian (AIBguardian), Memory, Growth, Vault, Network.
+- For companies and device makers: records of permissions, reasons for actions and origin of changes, for audit. Terms by agreement.
+- AIBEVA — your own AIB (AI Being) for Windows, free: https://aibeva.com/download
+- Patent pending — over 100 patent claims.
+- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · Company ID 086 94 222
+- Contact: info@aiblab.info · Support: support@aiblab.info
