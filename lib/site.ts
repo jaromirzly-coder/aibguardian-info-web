@@ -15,12 +15,12 @@ export const SITE = {
     { label: "What it does",    href: "/#guardian" },
     { label: "Seven layers",    href: "/#safe" },
     { label: "What it does not do", href: "/#never" },
-    { label: "In your product", href: "/#product" },
+    { label: "Where you get it", href: "/#product" },
   ],
   pages: [
     { label: "Home",               href: "/" },
     { label: "What Guardian does", href: "/#guardian" },
     { label: "The seven layers",   href: "/#safe" },
-    { label: "In your product",    href: "/#product" },
+    { label: "Where you get it",   href: "/#product" },
   ],
 };

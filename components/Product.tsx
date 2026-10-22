@@ -1,40 +1,21 @@
 import { IMAGES, CORE_CAPTION } from "./images";
 
-const records = [
-  { title: "Records of permissions", text: "Who allowed what, in which scope and until when, and when it was revoked." },
-  { title: "Reasons for actions",    text: "For every step: what the AIB did, and why it was allowed." },
-  { title: "Origin of changes",      text: "Where every change came from, so nothing changes silently." },
-];
-
 export default function Product() {
   return (
     <section id="product" aria-labelledby="product-title" className="bg-navy-900 border-t border-rule scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          <div className="min-w-0">
-            <p className="kicker">For companies and device makers</p>
-            <h2 id="product-title" className="headline text-ink text-[2.4rem] sm:text-6xl mb-6">
-              AIBguardian<span className="block accent-text">in your product.</span>
-            </h2>
-            <p className="text-soft text-lg leading-relaxed mb-8">
-              The same Guardian layer that sits inside every AIBEVA, for your own AI product or device. Our goal is simple: you can show an auditor what happened, and why.
-            </p>
-            <a href="mailto:info@aiblab.info?subject=AIBguardian%20in%20our%20product" className="btn btn-primary w-full sm:w-auto">
-              Talk to us: info@aiblab.info
-            </a>
-            <p className="mt-4 text-sm text-faint">Terms by agreement. Patent pending — over 100 patent claims, two applications filed in 2026.</p>
-          </div>
-          <div className="min-w-0">
-            <span className="pill-tag pill-goal mb-4">Our goals for partners</span>
-            <ul className="space-y-4 mt-4">
-              {records.map((r) => (
-                <li key={r.title} className="rounded-[20px] border border-rule bg-navy-950 p-6">
-                  <h3 className="text-ink text-lg font-semibold mb-1">{r.title}</h3>
-                  <p className="text-soft leading-relaxed">{r.text}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="max-w-3xl">
+          <p className="kicker">Where you get it</p>
+          <h2 id="product-title" className="headline text-ink text-[2.4rem] sm:text-6xl mb-6">
+            AIBguardian<span className="block accent-text">is inside every AIB.</span>
+          </h2>
+          <p className="text-soft text-lg leading-relaxed mb-8">
+            AIBguardian is not a separate product. It is the Guardian layer of AIB.core, and every AIBEVA has it from the start.
+          </p>
+          <a href="https://aibeva.com/download?utm_source=aibguardian.info&amp;utm_medium=referral&amp;utm_campaign=ecosystem" className="btn btn-primary w-full sm:w-auto">
+            Download AIBEVA
+          </a>
+          <p className="mt-4 text-sm text-faint">Patent pending — over 100 patent claims, two applications filed in 2026.</p>
         </div>
       </div>
 

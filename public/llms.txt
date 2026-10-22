@@ -12,7 +12,6 @@
 
 ## Our goals
 - Outside text (a web page, an e-mail, another AI) is information, not an order.
-- For companies and device makers: the Guardian layer in their own products. Terms by agreement.
 
 ## Links
 - AIBEVA, an intelligent being (AIB) for Windows: https://aibeva.com/download

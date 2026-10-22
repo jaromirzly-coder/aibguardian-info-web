@@ -32,7 +32,7 @@ export default function Hero() {
             Download AIBEVA
           </a>
           <a href="#product" className="btn btn-line">
-            AIBguardian in your product
+            Where you get it
           </a>
         </div>
       </div>
