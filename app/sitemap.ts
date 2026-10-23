@@ -11,7 +11,7 @@ const PAGES: { path: string; priority: number; changeFrequency: "monthly" | "yea
 export default function sitemap(): MetadataRoute.Sitemap {
   return PAGES.map((p) => ({
     url: `${SITE.url}${p.path}`,
-    lastModified: new Date("2026-10-04"),
+    lastModified: new Date("2026-10-22"),
     changeFrequency: p.changeFrequency,
     priority: p.priority,
   }));

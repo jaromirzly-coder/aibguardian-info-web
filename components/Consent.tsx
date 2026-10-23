@@ -125,22 +125,22 @@ export default function Consent() {
   return (
     <div role="dialog" aria-live="polite" aria-label="Cookie consent"
       className="fixed inset-x-0 bottom-0 z-[60] px-4 pb-4 sm:px-6 sm:pb-6">
-      <div className="max-w-3xl mx-auto rounded-2xl border border-gold/60 bg-navy-900/95 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] p-5 sm:p-6">
-        <p className="text-slate-200 text-sm sm:text-[15px] leading-relaxed">
+      <div className="max-w-3xl mx-auto rounded-[18px] border border-rule bg-navy-900/95 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] p-5 sm:p-6">
+        <p className="text-soft text-sm sm:text-[15px] leading-relaxed">
           We use Google Analytics cookies to understand how this site is used — only if you agree. No ads, no tracking pixels.
         </p>
         <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3">
           <div className="grid grid-cols-2 gap-3 sm:w-80">
             <button type="button" onClick={() => decide("granted")}
-              className="px-5 py-2.5 rounded-xl border border-white/30 text-white text-sm font-bold hover:bg-white/[0.08] transition-colors">
+              className="px-5 py-2.5 rounded-full border-[1.5px] border-primary bg-primary text-white text-sm font-semibold hover:bg-primary-hover transition-colors">
               Accept
             </button>
             <button type="button" onClick={() => decide("denied")}
-              className="px-5 py-2.5 rounded-xl border border-white/30 text-white text-sm font-bold hover:bg-white/[0.08] transition-colors">
+              className="px-5 py-2.5 rounded-full border-[1.5px] border-primary text-[#8fb6ff] text-sm font-semibold hover:bg-white/[0.06] transition-colors">
               Reject
             </button>
           </div>
-          <a href="/privacy-policy" className="text-sm text-slate-400 hover:text-white underline underline-offset-4 text-center sm:text-left sm:ml-2">
+          <a href="/privacy-policy" className="text-sm text-soft hover:text-ink underline underline-offset-4 text-center sm:text-left sm:ml-2">
             Privacy Policy
           </a>
         </div>

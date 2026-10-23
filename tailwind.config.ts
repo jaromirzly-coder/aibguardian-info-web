@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+// Palette of aibeva.com (v3.2): dark navy base, one site accent (AIBguardian = mint).
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,19 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          950: "#040916",
-          900: "#0a1022",
-          800: "#0c1733",
-          700: "#14224a",
+          950: "#070c1a", // bg
+          900: "#0f1830", // surface
+          800: "#111d3a", // tint
+          700: "#1f2c4d", // rule
         },
-        gold: {
-          DEFAULT: "#d4a94f",
-          light: "#f3d27a",
-          dark: "#b8892f",
-        },
+        rule: "#1f2c4d",
+        ink: "#f3f6fc",
+        soft: "#a9b5cc",
+        faint: "#75829e",
+        primary: { DEFAULT: "#4d8bff", hover: "#2f6bff" },
+        accent: { DEFAULT: "#2fd6b8", ink: "#04211c" },
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        sans: ['"Segoe UI Variable Text"', '"Segoe UI Variable Display"', '"Segoe UI"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
+        display: ['"Segoe UI Variable Display"', '"Segoe UI"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
       },
     },
   },

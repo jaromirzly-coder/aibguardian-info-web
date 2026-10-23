@@ -18,12 +18,12 @@ export default function Home() {
       <Hero />
       <Numbers />
       <WhatGuardianDoes />
-      <Safe highlight="GUARDIAN" intro="Guardian is layer three of seven. Together they make one rule hold: your AIB answers to you." />
+      <Safe highlight="GUARDIAN" intro="Guardian is layer three of seven. Together they keep one rule: your AIB answers to you." />
       <Never />
       <GetAibeva
-        title="SEE IT WORKING:"
-        gold="DOWNLOAD AIBEVA FREE."
-        intro="Every AIBEVA has AIBguardian inside. Download it, talk to it, try to talk it out of its limits — and watch Guardian hold."
+        title="Don’t trust us."
+        accent="Look for yourself."
+        intro="Every AIBEVA has AIBguardian inside. Download it, read the trust strip under each answer, open the Vault and compare every connection with the public list."
       />
       <Product />
       <HopeaBand />
