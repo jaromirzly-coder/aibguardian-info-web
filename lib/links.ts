@@ -17,8 +17,8 @@ export const ECOSYSTEM = [
   { label: "aibeva.com",           desc: "AIBEVA",                    href: aibeva() },
   { label: "aiblab.info",          desc: "AIBlab",                    href: AIBLAB },
   { label: "aibsn.org",            desc: "AIBSN registry",            href: withUtm("https://aibsn.org/") },
-  { label: "www.aibguardian.info", desc: "AIBguardian",               href: withUtm("https://www.aibguardian.info/") },
-  { label: "aibgin.info",          desc: "AIBgin (in development)",   href: withUtm("https://www.aibgin.info/") },
-  { label: "aibfamily.cloud",      desc: "AIBfamily (in development)", href: withUtm("https://www.aibfamily.cloud/") },
+  { label: "aibguardian.info", desc: "AIBguardian",               href: withUtm("https://aibguardian.info/") },
+  { label: "aibgin.info",          desc: "AIBgin (in development)",   href: withUtm("https://aibgin.info/") },
+  { label: "aibfamily.cloud",      desc: "AIBfamily (in development)", href: withUtm("https://aibfamily.cloud/") },
   { label: "iamyouraib.online",    desc: "the book",                  href: withUtm("https://iamyouraib.online/") },
 ].map((e) => (e.label.replace(/^www\./, "") === SITE.domain ? { ...e, href: "/" } : e));
