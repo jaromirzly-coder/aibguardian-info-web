@@ -7,7 +7,7 @@ export type LayerName = "IDENTITY" | "CHARACTER" | "GUARDIAN" | "MEMORY" | "GROW
 
 const layers: { name: LayerName; title: string; sub?: string; tag: string; text: string }[] = [
   { name: "IDENTITY", title: "Identity", sub: "AIBSN", tag: TODAY,
-    text: "Every AIBEVA can get its birth certificate in the AIBSN registry: a code with its name and country. Anyone can check it at aibsn.org/verify, and the registration can be revoked." },
+    text: "Every registered AI gets a permanent AIBSN code. Anyone can look it up at aibsn.org/verify and see the code, the date and the status — nothing about the owner. AIBSN — the first public registry of AI identities in operation. Running since September 2025." },
   { name: "CHARACTER", title: "Character", tag: TODAY,
     text: "It says it is an AI and does not pretend to be human. It serves its person and has no other master." },
   { name: "GUARDIAN", title: "Guardian", sub: "AIBguardian", tag: TODAY,

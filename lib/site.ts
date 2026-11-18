@@ -2,7 +2,7 @@
 export const SITE = {
   name: "AIBguardian",
   domain: "aibguardian.info",
-  url: "https://www.aibguardian.info",
+  url: "https://aibguardian.info",
   short: "aibguardian",
   gaId: "G-JHHL6VDXW1",
   tagline: "The Guardian layer inside every AIB. Safety you can check, not safety you were promised. Powered by AIB.core.",
