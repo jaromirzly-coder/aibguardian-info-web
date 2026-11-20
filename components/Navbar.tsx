@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { SITE } from "@/lib/site";
-import { aibeva, DOWNLOAD } from "@/lib/links";
+import { aibeva, DOWNLOAD, ACADEMY } from "@/lib/links";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -40,6 +40,9 @@ export default function Navbar() {
           <a href={aibeva()} target="_blank" rel="noopener" className="text-soft hover:text-[#8fb6ff] transition-colors">
             AIBEVA ↗
           </a>
+          <a href={ACADEMY} target="_blank" rel="noopener" className="text-soft hover:text-[#8fb6ff] transition-colors">
+            Academy ↗
+          </a>
         </div>
 
         <div className="flex items-center gap-2">
@@ -68,6 +71,10 @@ export default function Navbar() {
           <a href={aibeva()} target="_blank" rel="noopener" onClick={() => setOpen(false)}
             className="px-4 py-2.5 text-[0.95rem] text-soft hover:text-ink hover:bg-white/[0.05] rounded-xl transition-colors">
             AIBEVA ↗
+          </a>
+          <a href={ACADEMY} target="_blank" rel="noopener" onClick={() => setOpen(false)}
+            className="px-4 py-2.5 text-[0.95rem] text-soft hover:text-ink hover:bg-white/[0.05] rounded-xl transition-colors">
+            Academy ↗
           </a>
           <div className="border-t border-rule mt-2 pt-3">
             <a href={DOWNLOAD} target="_blank" rel="noopener" onClick={() => setOpen(false)}

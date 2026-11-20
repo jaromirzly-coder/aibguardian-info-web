@@ -12,6 +12,7 @@ export function withUtm(url: string): string {
 export const aibeva = (path = "/") => withUtm(`https://aibeva.com${path}`);
 export const DOWNLOAD = aibeva("/download");
 export const AIBLAB = withUtm("https://aiblab.info/");
+export const ACADEMY = withUtm("https://aibevachannel.com/");
 
 export const ECOSYSTEM = [
   { label: "aibeva.com",           desc: "AIBEVA",                    href: aibeva() },
@@ -21,4 +22,5 @@ export const ECOSYSTEM = [
   { label: "aibgin.info",          desc: "AIBgin (in development)",   href: withUtm("https://aibgin.info/") },
   { label: "aibfamily.cloud",      desc: "AIBfamily (in development)", href: withUtm("https://aibfamily.cloud/") },
   { label: "iamyouraib.online",    desc: "the book",                  href: withUtm("https://iamyouraib.online/") },
+  { label: "aibevachannel.com",    desc: "AIBEVA Academy",            href: ACADEMY },
 ].map((e) => (e.label.replace(/^www\./, "") === SITE.domain ? { ...e, href: "/" } : e));
